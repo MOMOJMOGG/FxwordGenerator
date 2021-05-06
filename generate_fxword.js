@@ -25,5 +25,4 @@ function generateFxword(target) {
   return `身為一個${person[target]}，${targetTask}，${targetPhrase}吧!`
 }
 
-// module.exports = generateFxword
-console.log(generateFxword('engineer'))
+module.exports = generateFxword
