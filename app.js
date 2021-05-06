@@ -2,6 +2,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const generateFxword = require('./generate_fxword')
 
 // require express-handlebars here
 const exphbs = require('express-handlebars')
