@@ -20,7 +20,7 @@ app.use(express.urlencoded({
 
 // routes setting
 app.get('/', (req, res) => {
-  res.send('This is my movie list built with Express')
+  res.render('index')
 })
 
 // start and listen on the Express server
