@@ -23,6 +23,11 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+// routes setting
+app.post('/', (req, res) => {
+  console.log(req.body)
+})
+
 // start and listen on the Express server
 app.listen(port, () => {
   console.log(`Express is listening on localhost:${port}`)
