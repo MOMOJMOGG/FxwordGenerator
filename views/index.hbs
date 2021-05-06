@@ -1,14 +1,15 @@
 <div class="container mt-5">
   <div class="row">
-    <div class="col-12 col-lg-10 col-xl-8 mx-auto quote-title">
+    <div class="col-12 mx-auto quote-title">
       <h1 class="text-center text-light font-weight-bold">你想對誰說幹話?</h1>
     </div>
 
-    <form method="POST" action="/" class="col-12 col-lg-10 col-xl-8 mx-auto mt-3">
+    <form method="POST" action="/" class="col-12 mx-auto mt-3">
       <div class="cards d-flex justify-content-between">
         <div class="card col-3 p-0 mx-1">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
-            class="engineer-img" style="width:100%;height:180px" alt="Option-Image">
+          <label class="img-label form-check-label" for="engineer-option">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              class="engineer-img" alt="Option-Image"></label>
           <div class="card-body text-center">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="target" id="engineer-option" value="engineer" required
@@ -20,8 +21,10 @@
           </div>
         </div>
         <div class="card col-3 p-0 mx-1">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
-            class="designer-img rounded" style="width:100%;height:180px" alt="Option-Image">
+          <label class="img-label form-check-label" for="designer-option">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              class="designer-img rounded" alt="Option-Image" for="designer-option">
+          </label>
           <div class="card-body text-center">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="target" id="designer-option" value="designer" required
@@ -33,8 +36,9 @@
           </div>
         </div>
         <div class="card col-3 p-0 mx-1">
-          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
-            class="entrepreneur-img rounded" style="width:100%;height:180px" alt="Option-Image">
+          <label class="img-label form-check-label" for="entrepreneur-option">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              class="entrepreneur-img rounded" alt="Option-Image"></label>
           <div class="card-body text-center">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="target" id="entrepreneur-option" value="entrepreneur"
@@ -51,8 +55,7 @@
           <button class="btn btn-primary" style="width: 100%; height: 40px" type="submit">產生幹話</button>
         </div>
         <div class="col-9 mx-1 p-0">
-          <textarea name="genFxword" id="generated-fxword" rows="3" style="width: 90%; height: 80px"
-            readonly="readonly">{{ result }}</textarea>
+          <textarea name="genFxword" id="generated-fxword" rows="3" readonly="readonly">{{ result }}</textarea>
         </div>
       </div>
     </form>
