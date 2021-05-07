@@ -36,7 +36,7 @@ cd D://FxwordGenerator
 
 ```
 npm install
-
+```
 
 4. 運行 start 腳本指令，啟動專案伺服器
 
