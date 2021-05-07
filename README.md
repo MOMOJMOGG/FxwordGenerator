@@ -3,7 +3,7 @@
 一個基於 Node.js 的 Express 框架練習專案
 
 ## 專案畫面 Demo
-[<img align="center" src="https://github.com/MOMOJMOGG/FxwordGenerator/blob/master/public/images/HomePage.PNG" height="500" width="500" />]()
+[<img align="center" src="https://github.com/MOMOJMOGG/FxwordGenerator/blob/master/public/images/HomePage.PNG" height="400" width="800" />]()
 
 ## 功能描述 - Features
 - 選擇一個講幹話的對象
